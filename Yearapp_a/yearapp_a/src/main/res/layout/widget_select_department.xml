@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_select_department"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/x25"
+    android:paddingRight="@dimen/x25"
+    android:background="@null">
+
+    <LinearLayout
+        android:id="@+id/ll_select_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_corner"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="请选择您所属的城市"
+                android:textColor="#ccc" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#00f" />
+
+        <TextView
+            android:id="@+id/tv_guangzhou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/bg_select_department_pop"
+            android:text="广州市场"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#00f" />
+
+        <TextView
+            android:id="@+id/tv_beijing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/bg_select_department_pop"
+            android:gravity="center"
+            android:text="北京市场"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_select_department"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_round_corner"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="返回"
+        android:textColor="#00f"
+        android:textSize="20sp" />
+
+</RelativeLayout>

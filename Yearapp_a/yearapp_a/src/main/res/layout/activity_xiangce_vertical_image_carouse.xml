@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical">
+
+    <com.infinitus.yearapp_a.view.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titleBar:backgroud="#EC783D"
+        titleBar:icon2Color="#ffffff"
+        titleBar:icon2Name="完成"
+        titleBar:icon2Size="12sp"
+        titleBar:logoColor="#ffffff"
+        titleBar:logoName="取消"
+        titleBar:logoSize="12sp" />
+
+  <!--  <include layout="@layout/widget_logo_small" />-->
+
+    <FrameLayout xmlns:carousel="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--它要求父布局必须是FrameLayout-->
+        <com.acbelter.directionalcarousel.CarouselViewPager
+            android:id="@+id/carousel_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            carousel:infinite="true"
+            carousel:scrollScalingMode="bigCurrent"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">无限极年会</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    
+    <string name="scan_tips">\"将二维码图片对准扫描框即可自动扫描\"</string>
+    
+    
+    <string name="selelct_your_department">请选择您的部门</string>
+    <string name="complete">完成</string>
+    <string name="cancel">取消</string>
+    <string name="beautify">美颜</string>
+    <string name="select_department">选择部门</string>
+    <string name="user_guide">使用手册</string>
+    <string name="version_update">版本更新</string>
+    <string name="message_center">消息中心</string>
+
+
+
+    <string name="newUpdateAvailable">发现新版本</string>
+    <string name="dialogPositiveButton">立即下载</string>
+    <string name="dialogNegativeButton">以后再说</string>
+    <string name="app_no_new_update">没有发现新版本</string>
+    <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="download_success">下载完成，点击安装</string>
+
+    <string name="dialog_close">Close</string>
+
+</resources>

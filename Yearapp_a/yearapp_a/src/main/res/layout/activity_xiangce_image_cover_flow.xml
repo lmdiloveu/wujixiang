@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical" >
+
+    <com.infinitus.yearapp_a.view.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titleBar:backgroud="#EC783D"
+        titleBar:icon2Name="完成"
+        titleBar:icon2Size="12sp"
+        titleBar:icon2Color="#ffffff"
+        titleBar:logoName="取消"
+        titleBar:logoSize="12sp"
+        titleBar:logoColor="#ffffff"
+        /> 
+
+  <!--  <include layout="@layout/widget_logo_small"/>-->
+
+    <at.technikum.mti.fancycoverflow.FancyCoverFlow
+        android:id="@+id/fancyCoverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y900"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        />
+
+    <com.acbelter.directionalcarousel.CarouselViewPager
+        xmlns:carousel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/carousel_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        carousel:infinite="true"
+        carousel:scrollScalingMode="bigCurrent"
+        android:visibility="gone"/>
+
+</LinearLayout>

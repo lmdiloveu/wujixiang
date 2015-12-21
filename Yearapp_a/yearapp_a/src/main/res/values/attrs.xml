@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 仿IOS7滑动按钮 -->
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+    
+    <!-- 3D水平滚动相册 -->
+      <declare-styleable name="ImageCoverFlowView">
+        <attr name="visibleImage" format="integer" />
+        <attr name="reflectionHeight" format="fraction" />
+        <attr name="reflectionGap" format="dimension" />
+        <attr name="topImageClickEnable" format="boolean" />
+        <attr name="enableReflection" format="boolean" />
+        <attr name="reflectionShaderEnable" format="boolean" />
+        <attr name="coverflowGravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="center_vertical" value="2" />
+        </attr>
+        <attr name="coverflowLayoutMode" format="enum">
+            <enum name="match_parent" value="0"></enum>
+            <enum name="wrap_content" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--以下几个都是垂直滚动图片相册模板 自定义的属性-->
+    <declare-styleable name="CarouselViewPager">
+        <attr name="android:orientation"/>
+        <attr name="infinite" format="boolean"/>
+        <attr name="scrollScalingMode"/>
+        <attr name="bigScale" format="float"/>
+        <attr name="smallScale" format="float"/>
+        <attr name="minPagesOffset" format="dimension"/>
+        <attr name="sidePagesVisiblePart" format="float"/>
+        <attr name="wrapPadding" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="scrollScalingMode" format="enum">
+        <enum name="bigCurrent" value="0"/>
+        <enum name="bigAll" value="1"/>
+        <enum name="none" value="2"/>
+    </attr>
+
+    <declare-styleable name="ForegroundLinearLayout">
+        <attr name="android:foreground"/>
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundRelativeLayout">
+        <attr name="android:foreground"/>
+    </declare-styleable>
+
+    <!--以下都是更新模块  的对话框 自定义属性-->
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color"/>
+        <attr name="DialogSpotCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="StyledDialogs">
+        <attr name="sdlDialogStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DialogStyle">
+        <attr name="dialogBackground" format="reference" />
+        <attr name="titleTextColor" format="color|reference" />
+        <attr name="titleSeparatorColor" format="color|reference" />
+        <attr name="messageTextColor" format="color|reference" />
+        <attr name="buttonTextColor" format="color|reference" />
+        <attr name="buttonSeparatorColor" format="color|reference" />
+        <attr name="buttonBackgroundColorNormal" format="color|reference" />
+        <attr name="buttonBackgroundColorPressed" format="color|reference" />
+        <attr name="buttonBackgroundColorFocused" format="color|reference" />
+    </declare-styleable>
+
+</resources>

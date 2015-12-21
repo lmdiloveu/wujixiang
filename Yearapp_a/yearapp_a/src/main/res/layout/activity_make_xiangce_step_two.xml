@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/widget_logo_small"/>
+
+   <!-- <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y160"
+        android:dividerHeight="@dimen/y10"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none">
+    </ListView>-->
+
+    <LinearLayout
+        android:id="@+id/ll_xiangce_A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_marginTop="@dimen/y55"
+        android:background="@drawable/bg_setting_menu_item1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x87"
+            android:layout_height="@dimen/y69"
+            android:layout_marginLeft="@dimen/x80"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_camare"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="@dimen/x80"
+            android:text="相册 - A"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_xiangce_B"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:background="@drawable/bg_setting_menu_item2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x87"
+            android:layout_height="@dimen/y69"
+            android:layout_marginLeft="@dimen/x80"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_camare"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="@dimen/x80"
+            android:text="相册 - B"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_xiangce_C"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:background="@drawable/bg_setting_menu_item3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x87"
+            android:layout_height="@dimen/y69"
+            android:layout_marginLeft="@dimen/x80"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_camare"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="@dimen/x80"
+            android:text="相册 - C"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+<!--
+    <Button
+        android:id="@+id/btn_xiangce_A"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_marginTop="@dimen/y55"
+        android:background="@drawable/bg_setting_menu_item1"
+        android:text="相册-A"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_xiangce_B"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:background="@drawable/bg_setting_menu_item2"
+        android:text="相册-B"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_xiangce_C"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:background="@drawable/bg_setting_menu_item3"
+        android:text="相册-C"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />-->
+
+
+</LinearLayout>

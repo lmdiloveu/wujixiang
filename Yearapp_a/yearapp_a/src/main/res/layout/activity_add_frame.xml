@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/backgroud">
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y900"
+        >
+        <com.infinitus.yearapp_a.view.ZoomImageView
+            android:id="@+id/iv_src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <ImageView
+            android:id="@+id/iv_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/frame_default"
+            android:scaleType="fitXY"
+            />
+    </FrameLayout>
+    
+    <HorizontalScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scrollbars="none">
+        <LinearLayout 
+            android:id="@+id/ll_frames"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@null"
+            android:gravity="center_vertical"
+            />
+    </HorizontalScrollView>
+
+</LinearLayout>

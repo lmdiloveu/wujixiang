@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/backgroud">
+    
+    <include layout="@layout/widget_logo_small"/>
+    
+    <Button 
+        android:id="@+id/btn_make_xiangce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_marginTop="@dimen/y160"
+        android:text="制作相册"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="#D24B1E"/>
+    <Button 
+        android:id="@+id/btn_browse_xiangce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:text="浏览相册"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="#CD582D"/>
+
+</LinearLayout>

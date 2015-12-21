@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/backgroud"
+    android:gravity="center_horizontal"
+    android:keepScreenOn="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y35"
+        >
+        <ImageView
+            android:id="@+id/iv_logo_background"
+            android:layout_width="@dimen/x326"
+            android:layout_height="@dimen/y330"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo_bg_large"/>
+        <ImageView
+            android:layout_width="@dimen/x208"
+            android:layout_height="@dimen/y213"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo_large"/>
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="@dimen/x477"
+        android:layout_height="@dimen/y116"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y35"
+        android:src="@drawable/kouhao_logo" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y65"
+        android:layout_marginTop="@dimen/y55"
+        android:background="#CB431D"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x75"
+        android:paddingRight="@dimen/x75"
+        android:paddingTop="@dimen/y40"
+        android:paddingBottom="@dimen/y40"
+        android:background="#C64E2B"
+        android:textColor="#fff"
+        android:text="使用说明：\n屏幕向自己，闪光灯向舞台\n按节奏晃动手机\n部分平板电脑和手机比如ipad等无法使用"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y65"
+        android:background="#CB431D"/>
+
+</LinearLayout>

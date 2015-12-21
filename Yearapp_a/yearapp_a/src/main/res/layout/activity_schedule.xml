@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical">
+
+        <include layout="@layout/widget_logo_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginTop="30dp"
+            android:background="#D34C1F"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/y70"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x100"
+                android:background="@drawable/icon_schedul"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="参会时间表"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/x457"
+            android:layout_height="@dimen/y483"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/schedul_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y50"
+            android:background="#B32B13" />
+
+    </LinearLayout>

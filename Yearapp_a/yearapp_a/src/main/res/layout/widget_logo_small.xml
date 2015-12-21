@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y35"
+        >
+
+        <ImageView
+            android:id="@id/iv_logo_background"
+            android:layout_width="@dimen/x245"
+            android:layout_height="@dimen/y250"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_logo_bg_small" />
+
+        <ImageView
+            android:layout_width="@dimen/x164"
+            android:layout_height="@dimen/y167"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_logo_small" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/x470"
+        android:layout_height="@dimen/y116"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/y35"
+        android:src="@drawable/kouhao_logo" />
+</LinearLayout>

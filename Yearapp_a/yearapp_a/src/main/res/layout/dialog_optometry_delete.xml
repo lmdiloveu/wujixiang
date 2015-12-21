@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="@dimen/x615"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/y70"
+        android:paddingTop="@dimen/y70"
+        android:paddingLeft="@dimen/y20"
+        android:paddingRight="@dimen/y20"
+        android:gravity="center"
+        android:text="您确定要删除吗"
+        android:textColor="#5a5a5a"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/y50"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/x30"
+            android:background="#666666"
+            android:text="取  消"
+            android:textColor="#ffffff"
+            android:textSize="12.5sp" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/x35"
+            android:background="#e20005"
+            android:text="确  定"
+            android:textColor="#ffffff"
+            android:textSize="12.5sp" />
+    </LinearLayout>
+
+</LinearLayout>

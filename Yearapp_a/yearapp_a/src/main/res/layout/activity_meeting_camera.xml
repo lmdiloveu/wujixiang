@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/backgroud">
+    
+    <jp.co.cyberagent.android.gpuimage.GPUImageView
+        android:id="@+id/gpuiv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y850"
+        />
+    
+    <!--<com.infinitus.yearapp_a.view.UISwitchButton-->
+        <!--xmlns:switch="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/switch1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/y45"-->
+        <!--switch:bmHeight="3000dp"-->
+        <!--switch:bmWidth="70dp" />-->
+
+    <com.zcw.togglebutton.ToggleButton
+        android:id="@+id/toggle_beautify"
+        android:layout_width="54dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/y45"
+        toggle:onColor="#8f8"
+        toggle:offColor="#ddd"
+        toggle:spotColor="#fff"
+        toggle:offBorderColor="#ddd"
+        toggle:borderWidth="1dp"
+        />
+    
+    <TextView 
+        android:layout_marginTop="@dimen/y20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beautify"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        />
+    
+</LinearLayout>

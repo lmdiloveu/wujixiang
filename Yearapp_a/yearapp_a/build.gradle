@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'wuxianji'
+            keyPassword '123456'
+            storeFile file('Qunzhi.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.infinitus.yearapp_a"
+        minSdkVersion 10
+        targetSdkVersion 21
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':social_sdk_library_project')
+    compile project(':fancyCoverFlowmaster')
+    //    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:21+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.2'
+    compile files('libs/zxing.jar')
+    //滤镜
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    compile project(':ToggleButtonLib')
+    compile files('libs/Vuforia.jar')
+    compile files('libs/QCARUnityPlayer.jar')
+    compile files('libs/unity-classes.jar')
+}
